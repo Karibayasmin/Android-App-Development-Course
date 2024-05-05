@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Card Generator</string>
+
+    <!--MainActivity-->
+    <string name="do_you_want_to_show_any_message_to_your_card">Do you want to show any message to your card?</string>
+    <string name="please_type_your_message">Please type your message</string>
+    <string name="options_select_for_your_wish_card">Options select for your wish card</string>
+    <string name="add_your_name_to_the_card">Add your name to the card</string>
+    <string name="type_your_name">Type your name</string>
+    <string name="type_your_pray_message">Type your pray message</string>
+    <string name="add_your_pray_message_to_the_card">Add your pray message to the card</string>
+    <string name="select_background_color_of_your_card">Select background color of your card</string>
+    <string name="home">Home</string>
+    <!--MainActivity-->
+
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <include
+      android:id="@+id/toolbar_home"
+      layout="@layout/toolbar_layout" />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_marginTop="10dp"
+      android:layout_marginStart="20dp"
+      android:layout_marginEnd="20dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/do_you_want_to_show_any_message_to_your_card"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editText_your_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/please_type_your_message"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/options_select_for_your_wish_card"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <CheckBox
+          android:id="@+id/checkbox_add_your_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text="@string/add_your_name_to_the_card"
+          android:translationX="-5dp"/>
+
+      <androidx.appcompat.widget.AppCompatEditText
+          android:id="@+id/editText_name"
+          android:layout_toEndOf="@+id/checkbox_add_your_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="8dp"
+          android:hint="@string/type_your_name"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <CheckBox
+          android:id="@+id/checkbox_pray_message"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text="@string/add_your_pray_message_to_the_card"
+          android:translationX="-5dp"/>
+
+      <androidx.appcompat.widget.AppCompatEditText
+          android:id="@+id/editText_pray_message"
+          android:layout_below="@+id/checkbox_pray_message"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="8dp"
+          android:hint="@string/type_your_pray_message"/>
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/select_background_color_of_your_card"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+      <RadioButton
+          android:id="@+id/radio_blue"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:translationX="-5dp"
+          android:text="Blue"
+          android:checked="true"/>
+
+      <RadioButton
+          android:id="@+id/radio_pink"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:translationX="-5dp"
+          android:text="Pink"/>
+
+
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Preview your card"
+        android:textColor="@color/white"
+        android:background="@color/black"/>
+
+  </LinearLayout>
+
+</LinearLayout>

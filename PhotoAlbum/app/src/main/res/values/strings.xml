@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Photo Album</string>
+
+    <!--Details Activity-->
+    <string name="author">Author</string>
+    <string name="website_url">Website Url</string>
+    <string name="download_url">Download Url</string>
+    <!--Details Activity-->
+
+</resources>
